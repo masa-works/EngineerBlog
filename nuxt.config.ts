@@ -5,8 +5,8 @@ import tailwindTypography from "@tailwindcss/typography";
 export default defineNuxtConfig({
   modules: ["nuxt-microcms-module", "@nuxtjs/tailwindcss"],
   microCMS: {
-    serviceDomain: "masa-works",
-    apiKey: "muAD38Ma6srgroTtMqLhSg6HBohx0GNOYkIK",
+    serviceDomain: process.env.SERVICE_DOMAIN,
+    apiKey: process.env.API_KEY,
   },
   tailwindcss: {
     config: {
